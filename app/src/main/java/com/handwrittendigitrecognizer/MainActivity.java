@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.ml.nn.ModelReader;
+import com.ml.nn.model.Model;
+
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        try {
+            readModel();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void readModel() throws IOException {
+        ModelReader modelReader = new ModelReader();
+        Model model = modelReader.readModel();
+        model.getClass();
     }
 
     @Override
