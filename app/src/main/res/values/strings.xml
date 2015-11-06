@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Handwritten Digit Recognizer</string>
     <string name="action_settings">Settings</string>
+    <string name="take_photo_button">Take Photo</string>
+    <string name="recognized_digit">Recognized Digit: </string>
+    <string name="loading">Loading Neural Network, please wait.</string>
 </resources>
