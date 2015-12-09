@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 // set new pixel color to output bitmap
                 int composedColor = Color.argb(A, R, G, B);
                 int color = 255 - R;
-                if (color < 110) {
+                if (color < 130) {
                     color = 0;
                 }
                 bmOut.setPixel(x, y, composedColor);
